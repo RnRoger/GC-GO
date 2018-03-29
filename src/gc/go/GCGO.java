@@ -23,4 +23,8 @@ public class GCGO {
         System.out.println("stuff");
         return "stuff";
     }
+    
+    static double bepaalGCpercentage(String sequentie){
+       
+    }
 }
