@@ -7,7 +7,7 @@ package gc.go;
 
 /**
  *
- * @author rogie
+ * @author rogie en bram (yay)
  */
 public class GCGO {
     
