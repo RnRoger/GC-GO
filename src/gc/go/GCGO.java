@@ -10,12 +10,34 @@ package gc.go;
  * @author rogie
  */
 public class GCGO {
-
+    
+    static String sequentie;
+    static double gcpercentage;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        sequentie = LeesBestand();
+        gcpercentage = bepaalGCpercentage(sequentie);
+        System.out.println(gcpercentage);
     }
     
+    static String LeesBestand(){
+        System.out.println("stuff");
+        return "stuff";
+    }
+    
+    static double bepaalGCpercentage(String sequentie){
+       int g = 0;
+       int c = 0;
+       for(int i = 0; i < sequentie.length(); i++){
+           if("G".equals(sequentie.charAt(i))){
+               g++;
+           }
+           if("C".equals(sequentie.charAt(i))){
+               c++;
+           }   
+       }
+        return (g+c)/sequentie.length()*100;
+    }
 }
