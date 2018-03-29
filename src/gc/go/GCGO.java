@@ -10,13 +10,15 @@ package gc.go;
  * @author rogie
  */
 public class GCGO {
-    static String sequentie;
     
+    static String sequentie;
+    static double gcpercentage;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         sequentie = LeesBestand();
+        gcpercentage = bepaalGCpercentage(sequentie);
     }
     
     static String LeesBestand(){
@@ -25,6 +27,6 @@ public class GCGO {
     }
     
     static double bepaalGCpercentage(String sequentie){
-       
+       return 10;
     }
 }
