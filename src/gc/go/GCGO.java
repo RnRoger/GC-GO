@@ -33,6 +33,9 @@ public class GCGO {
            if("G".equals(sequentie.charAt(i))){
                g++;
            }
+           if("C".equals(sequentie.charAt(i))){
+               c++;
+           }   
        }
         return 10;
     }
