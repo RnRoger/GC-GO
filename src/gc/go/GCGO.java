@@ -10,12 +10,17 @@ package gc.go;
  * @author rogie
  */
 public class GCGO {
-
+    static String sequentie;
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        sequentie = LeesBestand();
     }
     
+    static String LeesBestand(){
+        System.out.println("stuff");
+        return "stuff";
+    }
 }
