@@ -19,6 +19,7 @@ public class GCGO {
     public static void main(String[] args) {
         sequentie = LeesBestand();
         gcpercentage = bepaalGCpercentage(sequentie);
+        System.out.println(gcpercentage);
     }
     
     static String LeesBestand(){
@@ -37,6 +38,6 @@ public class GCGO {
                c++;
            }   
        }
-        return 10;
+        return (g+c)/sequentie.length()*100;
     }
 }
