@@ -27,6 +27,13 @@ public class GCGO {
     }
     
     static double bepaalGCpercentage(String sequentie){
-       return 10;
+       int g = 0;
+       int c = 0;
+       for(int i = 0; i < sequentie.length(); i++){
+           if("G".equals(sequentie.charAt(i))){
+               g++;
+           }
+       }
+        return 10;
     }
 }
